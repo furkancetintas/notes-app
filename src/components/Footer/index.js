@@ -13,7 +13,10 @@ function Footer() {
         </li>
         <li className="flex items-center justify-center ml-5">
           <AiFillLinkedin size={22} />
-          <a className="ml-1" href="linkedin.com/in/furkancetintas">
+          <a
+            className="ml-1"
+            href="https://www.linkedin.com/in/furkancetintas/"
+          >
             /in/furkancetintas/
           </a>
         </li>
