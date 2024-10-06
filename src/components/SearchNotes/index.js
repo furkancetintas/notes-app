@@ -12,7 +12,7 @@ function SearchNotes() {
 
   return (
     <div className="">
-      <h1 className="text-6xl m-4 text-center">Note-App with Redux</h1>
+      <h1 className="text-4xl my-4">Not Uygulaması</h1>
       <form>
         <label
           htmlFor="search"
