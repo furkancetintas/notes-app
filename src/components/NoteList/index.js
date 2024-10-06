@@ -29,20 +29,18 @@ function NoteList() {
       {filteredNotes?.map((note) => (
         <div
           key={note.id}
-          className="w-auto relative md:w-96 lg:w-[332px] p-6 mr-3 mb-3 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          className="w-auto relative md:w-96 lg:w-[332px] p-6 mr-3 mb-3 border border-gray-200 rounded-lg shadow"
         >
           <span
             className="absolute right-0 top-0 m-3 h-5 w-5 rounded-full flex justify-center items-center"
             style={{ backgroundColor: note.color }}
           ></span>
           <a href="/#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tigh">
               {note.title}
             </h5>
           </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {note.description}
-          </p>
+          <p className="mb-3 font-normal">{note.description}</p>
           <button
             onClick={() => dispatch(deleteNote(note.id))}
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
